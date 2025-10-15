@@ -16,7 +16,6 @@
 - **Filtros Personalizables**: Los usuarios pueden filtrar las alertas por tipo. Las preferencias se guardan en el navegador y se recuerdan entre visitas.
 - **Geolocalización**: Un botón permite a los usuarios centrar el mapa en su ubicación actual.
 - **Accesibilidad**: Mejoras en el panel de alertas y el modal de reporte para una mejor navegación con teclado y compatibilidad con lectores de pantalla.
-- **Página "Acerca de"**: Una sección informativa que describe el propósito y las funcionalidades del proyecto.
 
 ## Tecnologías Utilizadas
 
