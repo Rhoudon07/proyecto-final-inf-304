@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Línea 1 Monorriel de Santiago",
+        "color": "#FFD700"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-70.733, 19.485],
+          [-70.725, 19.480],
+          [-70.710, 19.475],
+          [-70.695, 19.468],
+          [-70.680, 19.460],
+          [-70.665, 19.455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Estación Cienfuegos",
+        "horario": "6:00 AM - 10:00 PM"
+      },
+      "geometry": { "type": "Point", "coordinates": [-70.733, 19.485] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Estación Central",
+        "horario": "6:00 AM - 10:00 PM",
+        "interconexion": ["Teleférico Línea 1", "Rutas Autobuses A, B, C"]
+      },
+      "geometry": { "type": "Point", "coordinates": [-70.695, 19.468] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Estación Pekín",
+        "horario": "6:00 AM - 10:00 PM"
+      },
+      "geometry": { "type": "Point", "coordinates": [-70.665, 19.455] }
+    }
+  ]
+}
