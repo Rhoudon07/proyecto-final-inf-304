@@ -58,10 +58,9 @@
         flex-grow: 1; 
         transition: width 0.3s ease;
     }
-    /* Estilos para el botón de geolocalización */
-    #locate-btn {
+    /* Estilos para los botones de control del mapa */
+    .map-control-btn {
         position: absolute;
-        top: 10px;
         left: 10px;
         z-index: 401; /* Por encima del mapa pero debajo de otros modales */
         background-color: white;
@@ -73,6 +72,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    #locate-btn {
+        top: 10px;
+    }
+    #reset-view-btn {
+        top: 80px; /* 10px (top) + 34px (height) + 10px (margin) */
     }
     /* Estilos para el panel lateral de alertas */
     #alert-panel {
@@ -205,8 +210,11 @@
   </header>
   <main class="main-content">
     <div id="map"></div>
-    <button id="locate-btn" title="Centrar en mi ubicación">
+    <button id="locate-btn" class="map-control-btn" title="Centrar en mi ubicación">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="22" y1="12" x2="18" y2="12"></line></svg>
+    </button>
+    <button id="reset-view-btn" class="map-control-btn" title="Restablecer vista">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
     </button>
     <aside id="alert-panel" aria-live="polite">
       <h2>Alertas Activas</h2>

@@ -15,6 +15,7 @@
 - **Panel de Alertas**: Un panel lateral lista todas las alertas activas, mostrando su tipo, descripción y hace cuánto tiempo fueron reportadas.
 - **Filtros Personalizables**: Los usuarios pueden filtrar las alertas por tipo. Las preferencias se guardan en el navegador y se recuerdan entre visitas.
 - **Geolocalización**: Un botón permite a los usuarios centrar el mapa en su ubicación actual.
+- **Restablecer Vista**: Un botón para devolver el mapa a su vista y zoom iniciales.
 - **Accesibilidad**: Mejoras en el panel de alertas y el modal de reporte para una mejor navegación con teclado y compatibilidad con lectores de pantalla.
 
 ## Tecnologías Utilizadas
@@ -50,3 +51,4 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local.
 - `GET /api/rutas/monorriel/linea1`: Devuelve los datos GeoJSON de la ruta del monorriel.
 - `GET /api/alertas`: Devuelve una lista de las alertas de tráfico activas.
 - `POST /api/alertas`: Permite crear una nueva alerta de tráfico.
+- `GET /acerca-de`: Sirve la página informativa del proyecto.

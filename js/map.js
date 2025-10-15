@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 4. Capas para rutas y alertas
   const routeLayer = L.layerGroup().addTo(map);
   const alertLayer = L.layerGroup().addTo(map);
-  const interconexionLayer = L.layerGroup().addTo(map);
+  // const interconexionLayer = L.layerGroup().addTo(map);
 
   // 6. Elementos del DOM para el modal de reporte
   const reportModal = document.getElementById('report-modal');
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const alertSpinner = document.getElementById('alert-spinner');
   const alertFilters = document.querySelectorAll('.alert-filter-cb');
   const locateButton = document.getElementById('locate-btn');
+  const resetViewButton = document.getElementById('reset-view-btn');
 
   // Variable para almacenar todas las alertas obtenidas del servidor
   let allAlerts = [];
@@ -378,4 +379,9 @@ document.addEventListener('DOMContentLoaded', function () {
   function onLocationError(error) {
     alert(`No se pudo obtener tu ubicación. Error: ${error.message}`);
   }
+
+  // --- Lógica para restablecer la vista del mapa ---
+  resetViewButton.addEventListener('click', () => {
+    map.setView([19.45, -70.7], 13);
+  });
 });
